@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TrainingActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrain10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/imageViewTrain1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button1"
+        android:tag="1"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton" />
+
+    <ImageView
+        android:id="@+id/imageViewTrain2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain3"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button2"
+        android:tag="2"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain4"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain3"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button3"
+        android:tag="3"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button4"
+        android:tag="4"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain6"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain5"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button5"
+        android:tag="5"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain7"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain6"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button6"
+        android:tag="6"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton" />
+
+    <ImageView
+        android:id="@+id/imageViewTrain7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain8"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button7"
+        android:tag="7"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain9"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain8"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button8"
+        android:tag="8"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain10"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain9"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button9"
+        android:tag="9"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrain0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain10"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain1"
+        app:srcCompat="@drawable/button0"
+        android:tag="0"
+        android:onClick="onClickNumber"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrainGo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTrain1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain10"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain11"
+        app:srcCompat="@drawable/button_ok"
+        android:onClick="onClickOk"
+        android:contentDescription="@string/numberButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrainBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/numberButton"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTrain1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain10"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain9"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain11"
+        android:onClick="onClickBack"
+        app:srcCompat="@drawable/button_back" />
+
+    <ImageView
+        android:id="@+id/imageViewGenerate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/numberButton"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTrain1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrain11"
+        android:onClick="onClickGenerate"
+        app:srcCompat="@drawable/button_generate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTrainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <TextView
+        android:id="@+id/textViewTrying"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTrain1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain9"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain3"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTrainText" />
+
+    <ListView
+        android:id="@+id/listViewTrainHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTrainText"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineTrain8"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTrain4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
