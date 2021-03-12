@@ -84,11 +84,11 @@ public class PvPActivity extends AppCompatActivity {
     }
 
     public void onClickNumber(View view) {
+        logic.clickedNumber(Integer.parseInt(view.getTag().toString()));
         if(!logic.isGameOver()) {
             if (logic.isPositionError()) {
                 Toast.makeText(this, R.string.warningHighPosition, Toast.LENGTH_SHORT).show();
             } else {
-                logic.clickedNumber(Integer.parseInt(view.getTag().toString()));
                 textView.setText(logic.getText());
                 if (logic.isError()) {
                     Toast.makeText(this, R.string.differentNumbers, Toast.LENGTH_SHORT).show();
@@ -98,10 +98,10 @@ public class PvPActivity extends AppCompatActivity {
     }
 
     public void onClickOk(View view) {
+        logic.checking();
         if(logic.isPositionError()) {
             Toast.makeText(this, R.string.warningHighPosition, Toast.LENGTH_SHORT).show();
         } else {
-            logic.checking();
             textView.setText(logic.getText());
             adapter1.notifyDataSetChanged();
             adapter2.notifyDataSetChanged();

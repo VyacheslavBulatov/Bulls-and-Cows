@@ -63,10 +63,10 @@ public class TrainingActivity extends AppCompatActivity {
     }
 
     public void onClickNumber(View view) {
+        logic.clickedNumber(Integer.parseInt(view.getTag().toString()));
         if(logic.isPositionError()){
             Toast.makeText(this, R.string.warningHighPosition, Toast.LENGTH_SHORT).show();
         } else {
-            logic.clickedNumber(Integer.parseInt(view.getTag().toString()));
             textView.setText(logic.getText());
             if (logic.isError()) {
                 Toast.makeText(this, R.string.differentNumbers, Toast.LENGTH_SHORT).show();
@@ -80,10 +80,10 @@ public class TrainingActivity extends AppCompatActivity {
     }
 
     public void onClickOk(View view) {
+        logic.checking();
         if(logic.isPositionError()) {
             Toast.makeText(this, R.string.warningHighPosition, Toast.LENGTH_SHORT).show();
         } else {
-            logic.checking();
             adapter.notifyDataSetChanged();
             textView.setText(logic.getText());
         }

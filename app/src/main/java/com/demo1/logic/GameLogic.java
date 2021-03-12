@@ -1,10 +1,5 @@
 package com.demo1.logic;
 
-
-import android.widget.Toast;
-
-import com.demo1.bullsandcows.R;
-
 import java.io.Serializable;
 
 public class GameLogic implements Serializable {
