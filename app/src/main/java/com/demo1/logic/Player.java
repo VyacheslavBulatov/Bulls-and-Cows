@@ -1,8 +1,9 @@
-package com.demo1.bullsandcows;
+package com.demo1.logic;
 
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Player implements Serializable {
     private String name;
@@ -11,6 +12,8 @@ public class Player implements Serializable {
     private int[] trying;
     private int bulls;
     private int cows;
+    private ArrayList<String> history;
+    private boolean isSolved;
 
     public Player(String name, int[] number) {
         this.name = name;
@@ -19,9 +22,20 @@ public class Player implements Serializable {
         this.trying = new int[] {-1, -1, -1, -1};
         this.bulls = 0;
         this.cows = 0;
+        this.history = new ArrayList<>();
+        isSolved = false;
     }
 
-
+    public Player(){
+        trying = new int[] {-1, -1, -1, -1};
+        number = new int[] {-1, -1, -1, -1};
+        this.bulls = 0;
+        this.cows = 0;
+        this.history = new ArrayList<>();
+        isSolved = false;
+        this.step = 1;
+        this.name = "";
+    }
 
 
     public String getName() {
@@ -76,4 +90,27 @@ public class Player implements Serializable {
         this.cows = cows;
     }
 
+    public ArrayList<String> getHistory() {
+        return history;
+    }
+
+    public void addToHistory(String part){
+        this.history.add(part);
+    }
+
+    public void clearHistory(){
+        this.history.clear();
+    }
+
+    public void setPartOfNumber(int number, int position) {
+        this.number[position] = number;
+    }
+
+    public boolean isSolved() {
+        return isSolved;
+    }
+
+    public void setSolved(boolean solved) {
+        isSolved = solved;
+    }
 }
